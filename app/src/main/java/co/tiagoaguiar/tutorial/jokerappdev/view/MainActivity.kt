@@ -1,4 +1,4 @@
-package co.tiagoaguiar.tutorial.jokerappdev
+package co.tiagoaguiar.tutorial.jokerappdev.view
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -10,6 +10,7 @@ import androidx.navigation.ui.AppBarConfiguration
 import androidx.navigation.ui.navigateUp
 import androidx.navigation.ui.setupActionBarWithNavController
 import androidx.navigation.ui.setupWithNavController
+import co.tiagoaguiar.tutorial.jokerappdev.R
 import com.google.android.material.navigation.NavigationView
 
 class MainActivity : AppCompatActivity() {
@@ -18,6 +19,7 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         installSplashScreen()       //tem que ser antes do setContentView(R.layout.activity_main)
+
         setContentView(R.layout.activity_main)
         // Buscar toolbar e set que eh toolbar de acao
         val toolbar = findViewById<Toolbar>(R.id.app_bar_main_toolbar)
